@@ -38,7 +38,6 @@ public class ColorBlobDetectionView extends SampleCvViewBase implements OnTouchL
 	private Bitmap mBmp;
 	private int mCreateBmp = 0;
 	private boolean displayStatus = false;
-	private int frameCount = 0;
 
 	private boolean mIsColorSelected = false;
 	private Scalar mBlobColorRgba = new Scalar(255);
@@ -305,7 +304,7 @@ public class ColorBlobDetectionView extends SampleCvViewBase implements OnTouchL
 							Core.putText(mRgba, new String("[COLLECTING DATA]"), new Point(0, mRgba.height() - 10 ), 
 								1/* CV_FONT_HERSHEY_COMPLEX */, 1, new Scalar(0, 255, 0, 255), 2);
 							//Core.circle(mRgba, new Point(20, mRgba.height() - 20) , 6, new Scalar(0, 255, 0, 255), -1);
-							//displayStatus = false;
+							displayStatus = false;
 						}
 						else
 						{
